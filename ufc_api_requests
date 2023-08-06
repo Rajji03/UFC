@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "6cc32fbd-a118-4ab4-a5b8-d1e0938ed4dc",
+		"name": "UFC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6991937"
+	},
+	"item": [
+		{
+			"name": "insert fighter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"email\":\"seanstrickland@gmail.com\",\r\n    \"username\":\"sean001\",\r\n    \"fighterName\":\"SeanStrickland\",\r\n    \"aliasName\":\"The Mad Man\",\r\n    \"city\":\"new Jersey\",\r\n    \"country\":\"USA\",\r\n    \"gymName\":\"mma masters\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/ufc/api/backend/insertFighter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"ufc",
+						"api",
+						"backend",
+						"insertFighter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create event",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"email\":\"seanstrickland@gmail.com\",\r\n    \"username\":\"sean001\",\r\n    \"fighterName\":\"SeanStrickland\",\r\n    \"aliasName\":\"The Mad Man\",\r\n    \"city\":\"new Jersey\",\r\n    \"country\":\"USA\",\r\n    \"gymName\":\"mma masters\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/ufc/api/backend/insertFighter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"ufc",
+						"api",
+						"backend",
+						"insertFighter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add fight",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"eventName\":\"UFC 291\",\r\n\"fighterIds\":[1,2],\r\n\"cardPosition\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/ufc/api/backend/addFight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"ufc",
+						"api",
+						"backend",
+						"addFight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add fights",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"eventName\":\"UFC 291\",\r\n\"fighterIds\":[1,2],\r\n\"cardPosition\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/ufc/api/backend/addFight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"ufc",
+						"api",
+						"backend",
+						"addFight"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
